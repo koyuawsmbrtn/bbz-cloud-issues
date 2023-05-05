@@ -1,15 +1,22 @@
 ---
+import Layout from "../layouts/base.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+	<h1>Einen Fehler melden</h1>
+	<p>Hast du einen Fehler gefunden oder andere Probleme mit der BBZ-Cloud-App? Schreibe unten dein Anliegen und wir werden der Sache nachgehen.</p>
+	<br>
+	<form name="issue" action="/success" method="POST" netlify>
+		<p>
+			<label>Name:<br><input type="text" name="name" required></label>
+		</p>
+		<p>
+			<label>Dein Anliegen:<br><textarea name="text" required></textarea></label>
+		</p>
+		<p>
+			<button type="submit">Senden</button>
+		</p>
+	</form>
+	<br>
+	<small>Tipp: Alternativ kannst du den Fehler auch direkt auf <a href="https://github.com/koyuawsmbrtn/bbz-cloud/issues/new" target="_blank">GitHub</a> melden.</small>
+</Layout>

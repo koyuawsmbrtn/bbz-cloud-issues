@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.3.2"
+    "astro": "^2.3.2",
+    "simpledotcss": "^2.2.0"
   }
 }

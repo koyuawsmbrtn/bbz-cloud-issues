@@ -1,0 +1,21 @@
+@media (min-width: 800px) {
+  body {
+    display: block !important;
+    width: 40% !important;
+    margin: 0 auto !important;
+  }
+}
+
+textarea,
+input {
+  width: 60% !important;
+}
+
+:root {
+  --bg: #173a64 !important;
+  --accent: #ffb606 !important;
+}
+
+* {
+  outline: 0 !important;
+}
